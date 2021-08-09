@@ -1,5 +1,5 @@
 # Data Structures
-![Data Structues heirarchy](https://www.onlinetutorialspoint.com/wp-content/uploads/2015/05/Datastructures.png)
+![Data Structues heirarchy](https://i.ytimg.com/vi/br48f5875IA/maxresdefault.jpg)
 - Data Structures
 	- Primitive Data Structures
 		- integer
