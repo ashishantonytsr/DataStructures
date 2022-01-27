@@ -52,6 +52,7 @@
 - A Node contains a DATA and an ADDRESS to the next node
 - HEAD will point to the first element in the list
 - Last node will have an address NULL
+
 ### Double Linked List
 - In this Linked List, a NODE contains 3 parts; Left address, data, End address
 - In the first node, left address contains NULL
@@ -73,5 +74,49 @@
 			D		E		F		// level 2 
 		G		H		I		J	// level 3 
 
+---
 
+## Graph
 
+- A graph contains *vertices* and *edges*
+- We call vertices as *Nodes* in DS
+- There are **Undirected Graphs** and **Directed Graphs**
+	- Directed Graphs have direction on their edges
+
+# Operations on Data Structures
+
+## Traversal
+Visiting each elements in an array/List.
+
+## Searching
+Searching in the array for an given element.
+We have two types of Searching in Data Structures *Sequential Searching* & *Non Sequential Searching*
+- Sequential Searching
+	- Searching all elements one after other; a linear searching
+- Non Sequential Searching
+	- A non linear Searching which does not traverse through all elements
+	- Searching the given element by splitting the given List
+	- eg: **Binary Search**: Dividing a array into 2 parts
+
+## Insertion
+Inserting elements in the List. 
+Element can be inserted anywhere in the list.
+
+## Deletion
+Deleting elements from the Data Structures.
+
+## Sorting
+Sorting the elements in the list. It can be *ascending order* or *descending order*.
+We have different types of Sorting . They are :
+- Selection Sort
+- Insertion Sort
+- Heap Sort
+- Radix Sort
+- Merge Sort
+- Quick Sort
+- Bubble Sort
+Choosing a good sorting method depends on the Time Space complexity and Efficiency.
+
+## Merging
+
+Simply Merging two or different array/List avoiding duplicates.
