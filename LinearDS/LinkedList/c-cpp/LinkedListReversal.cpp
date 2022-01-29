@@ -1,11 +1,6 @@
 #include <iostream>
+#include "linkedListNode.cpp"
 using namespace std;
-
-struct node
-{
-	int data;
-	node *next;
-};
 
 struct node *linkedListReversal(node *head)
 {
