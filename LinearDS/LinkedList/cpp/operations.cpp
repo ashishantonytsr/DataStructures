@@ -1,20 +1,20 @@
 #include <iostream>
 #include <stdlib.h>
-using namespace std;
+struct node {
+	int data;
+	node *next;
+};
 
-void displayList(node *head)
-{
+void displayList(node *head) {
 	node *index = head;
-	while (index != NULL)
-	{
-		cout << index->data << ' ';
+	while (index != NULL) {
+		std::cout << index->data << ' ';
 		index = index->next;
 	}
-	cout << endl;
+	std::cout << std::endl;
 }
 
-node *insertFirst(node *head, int data)
-{
+node *insertFirst(node *head, int data) {
 	node *link;
 	link = (node *)malloc(sizeof(node)); // Memory allocated with data type & size (sizeof(data_type))
 	link->data = data;
@@ -24,8 +24,7 @@ node *insertFirst(node *head, int data)
 }
 
 // TODO: implement deletion
-void deleteFirst(int item)
-{
+void deleteFirst(int item) {
 }
 
 // TODO: implement search()

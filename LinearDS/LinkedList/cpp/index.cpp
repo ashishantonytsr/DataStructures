@@ -1,9 +1,5 @@
-#include <iostream>
-#include "node.cpp"
 #include "operations.cpp"
-#include "reverse.cpp"
-#include "sortedMerge.cpp"
-using namespace std;
+#include "recursiveOperations.cpp"
 
 int main()
 {
@@ -28,5 +24,4 @@ int main()
 	// node *reversedlist = reverse(list);
 	// cout << "Reversed Linked List : ";
 	// displayList(reversedlist);
-	return 0;
 }
