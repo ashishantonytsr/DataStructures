@@ -1,9 +1,7 @@
 /*
 "node" is a data type created using struct; which contains
-integer 'data' & node 'next' 
-(can be seen at ./linkedListReversal.cpp @ line 4)
-
-linkedListReversal is a function imported from ./linkedListReversal; which executes reversal of linked list using recursion method
+integer 'data' & node 'next'  -- (can be seen at ./linkedListNode.cpp)
+linkedListReversal is a function imported from './linkedListReversal'; which executes reversal of linked list using recursion method
 */
 
 #include <iostream>
