@@ -1,7 +1,7 @@
 #include <iostream>
 #include "node.cpp"
 #include "operations.cpp"
-#include "reversal.cpp"
+#include "reverse.cpp"
 #include "sortedMerge.cpp"
 using namespace std;
 
@@ -19,15 +19,13 @@ int main()
 	list2 = insertFirst(list2, 12);
 	list2 = insertFirst(list2, 2);
 
-	node *mergedlist = NULL;
-	mergedlist = sortedMerge(list, list2);
+	node *mergedlist = sortedMerge(list, list2);
 	displayList(mergedlist);
 
 	// cout<<"Linked List : ";
 	// displayList(list);
 
-	// node *reversedlist;
-	// reversedlist = linkedListReversal(list);
+	// node *reversedlist = reverse(list);
 	// cout << "Reversed Linked List : ";
 	// displayList(reversedlist);
 	return 0;
