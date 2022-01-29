@@ -28,7 +28,9 @@ def merge(List, start, end, mid):
 		List[i] = temp[i-start]
 
 # mergeSort fn
-def mergeSort(List, start, end):
+def mergeSort(List, start=0, end=None):
+	if (end == None):
+		end = len(List) - 1
 	if start < end:
 		mid = int((start+end)/2)
 		mergeSort(List, start, mid)
