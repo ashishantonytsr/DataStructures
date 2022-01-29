@@ -1,52 +1,44 @@
 #include <iostream>
-using namespace std;
 
-int stackSize, endPointer = -1;
+int endPointer = -1;
 
-void display(int *stack)
-{
+void display(int stack[]) {
 	if (endPointer == -1)
-		cout << "\n\tStack Empty";
-	else
-	{
-		cout << endl
-				 << '\t';
+		std::cout << "\n\tStack Empty";
+	else {
+		std::cout << std::endl
+							<< '\t';
 		for (int i = 0; i <= endPointer; i++)
-			cout << stack[i] << " ";
+			std::cout << stack[i] << " ";
 	}
-	cout << endl;
+	std::cout << std::endl;
 }
 
-void push(int *stack, int item)
-{
-	if (endPointer < stackSize - 1)
-	{
+void push(int stack[], int stackSize, int item) {
+	if (endPointer < stackSize - 1) {
 		endPointer++;
 		stack[endPointer] = item;
-		cout << "Pushed item : " << item;
-	}
-	else
-	{
-		cout << "\n\tError : Stack OverFlow";
+		std::cout << "Pushed item : " << item << std::endl;
+	} else {
+		std::cout << "\n\tError : Stack OverFlow";
 	}
 }
 
-void pop(int stack[])
-{
+void pop(int stack[]) {
 	if (endPointer < 0)
-		cout << "\n\tError : Stack UnderFlow";
-	else
-	{
+		std::cout << "\n\tError : Stack UnderFlow";
+	else {
 		int poppedItem = stack[endPointer];
-		cout << "Popped item " << poppedItem;
+		std::cout << "Popped item " << poppedItem << std::endl;
 		endPointer--;
 	}
 }
 
-int search(int stack[], int item)
-{
+void search(int stack[], int item) {
 	for (int i = 0; i <= endPointer; i++)
-		if (item == stack[i])
-			return i + 1;
-	return -1;
+		if (item == stack[i]) {
+			std::cout << item << " found at location " << i + 1;
+			return;
+		}
+	std::cout << item << " not found";
 }
