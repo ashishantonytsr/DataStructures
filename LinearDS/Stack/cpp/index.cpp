@@ -1,6 +1,4 @@
-#include <iostream>
 #include "stack.cpp"
-
 int main()
 {
 	int size = 3;
