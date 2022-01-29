@@ -1,6 +1,12 @@
+/*
+"node" is a data type created using struct; which contains
+integer 'data' & node 'next' .
+(can be seen at ./linkedListReversal.cpp @ line 4)
+*/
+
 #include <iostream>
 #include <stdlib.h>
-#include "LinkedListReversal.cpp"
+#include "linkedListReversal.cpp"
 using namespace std;
 
 void displayList(node *head)
@@ -8,9 +14,10 @@ void displayList(node *head)
 	node *index = head;
 	while (index != NULL)
 	{
-		cout << index->data << '\n';
+		cout << index->data << ' ';
 		index = index->next;
 	}
+	cout << endl;
 }
 
 node *insertFirst(node *head, int data)
@@ -40,9 +47,11 @@ int main()
 	head = insertFirst(head, 15);
 	head = insertFirst(head, 40);
 
+	// cout<<"Linked List : ";
 	// displayList(head);
 	node *reversedHead;
 	reversedHead = linkedListReversal(head);
+	cout << "Reversed Linked List : ";
 	displayList(reversedHead);
 	return 0;
 }
