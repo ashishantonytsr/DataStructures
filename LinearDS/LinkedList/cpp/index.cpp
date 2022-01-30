@@ -3,19 +3,17 @@
 
 int main()
 {
-	node *list = NULL;
-	list = insertFirst(list, 40);
-	list = insertFirst(list, 22);
-	list = insertFirst(list, 8);
-	list = insertFirst(list, 1);
+	int dataInput1[] = {40,36,30,26,20,16,6,2};
+	node *list1 = NULL;
+	for (int i=0; i<8; i++)
+		list1 = insertFirst(list1, dataInput1[i]);
 
+	int dataInput2[] = {25,22,19,13,10,8,6,3};
 	node *list2 = NULL;
-	list2 = insertFirst(list2, 20);
-	list2 = insertFirst(list2, 16);
-	list2 = insertFirst(list2, 12);
-	list2 = insertFirst(list2, 2);
+	for (int i=0; i<8; i++)
+		list2 = insertFirst(list2, dataInput2[i]);
 
-	node *mergedlist = sortedMerge(list, list2);
+	node *mergedlist = sortedMerge(list1, list2);
 	displayList(mergedlist);
 
 	// cout<<"Linked List : ";
