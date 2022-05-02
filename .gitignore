@@ -1,6 +1,6 @@
 *.exe
 *.pyc
-.vscode
-__pycache__
-launch.json
-settings.json
+*/.vscode
+*/__pycache__
+*/launch.json
+*/settings.json
