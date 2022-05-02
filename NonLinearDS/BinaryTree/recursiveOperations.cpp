@@ -1,3 +1,5 @@
+#include <stdlib.h>
+
 struct node{
 	int data;
 	node *left;
